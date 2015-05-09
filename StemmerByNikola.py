@@ -399,6 +399,18 @@ def stem_str(str):
     str = str.replace("ć", "cy")
     str = str.replace("đ", "dx")
     str = str.replace("ž", "zx")
+    str = str.replace("Š", "sx")
+    str = str.replace("Č", "cx")
+    str = str.replace("Ć", "cy")
+    str = str.replace("Đ", "dx")
+    str = str.replace("Ž", "zx")
+    str = str.replace("“","\"")
+    str = str.replace("\"","")
+    str = str.replace("”","\"")
+    str = str.replace("'","\"")
+    str = str.replace("’","\"")
+    str = str.replace("€","eur")
+    str = str.replace("„","\"")
     lam = word_tokenize(str)
     i = 0
     for word in lam:
