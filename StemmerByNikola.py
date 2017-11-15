@@ -386,7 +386,7 @@ def stem_arr(str):
                 lam[i]= dictionary[key]
                 break
         for key in rules:
-            if(word.endswith(key) and len(word)>2):
+            if(word.endswith(key) and len(word)-len(key)>2):
                 lam[i] = word[:-len(key)]+rules[key]
                 break
         i = i+1
@@ -420,7 +420,7 @@ def stem_str(str):
                 break
         for key in rules:
             # Tokenize only words larger than 2 characters, apart from modal verbs
-            if(word.endswith(key) and len(word)>2):
+            if(word.endswith(key) and len(word)-len(key)>2):
                 lam[i] = word[:-len(key)]+rules[key]
                 break
         i = i+1
