@@ -432,5 +432,5 @@ def stem_str(str):
 out = stem_arr("Jovica je išao u školu. Marija je dobra devojka.")
 out2 = stem_str("Jovica je išao u školu. Marija je dobra devojka.")
 
-print out
-print out2
+print (out)
+print (out2)
